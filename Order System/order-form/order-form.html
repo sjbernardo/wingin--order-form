@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <script src="order-form-script.js" defer></script>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="wings">
+            <form id="orderForm" action="/order-form/order-form.html"> 
+                <!--Main Dish: Wings Flavor-->
+                <h3>Wings</h3>
+                <input type="radio" id="classic" name="wings" value="Classic" data-price="100">
+                <label for="classic">Classic</label> 
+
+                <input type="radio" id="buffalo" name="wings" value="Buffalo" data-price="120">
+                <label for="buffalo">Buffalo</label> 
+
+                <input type="radio" id="cheese" name="wings" value="Cheese" data-price="120">
+                <label for="cheese">Cheese</label> <br><br>
+
+                <input type="radio" id="soy-garlic" name="wings" value="Soy-Garlic" data-price="130">
+                <label for="soy-garlic">Soy Garlic</label> 
+
+                <input type="radio" id="garlic-parm" name="wings" value="Garlic-Parmesan" data-price="130">
+                <label for="garlic-parm">Garlic Parmesan</label> 
+
+                <input type="radio" id="salted-egg" name="wings" value="Salted-Egg" data-price="140">
+                <label for="salted-egg">Salted Egg</label> 
+
+                <br><br>
+
+                <!--Drinks-->
+                <h3>Drinks</h3>
+                <input type="radio" id="coke" name="drinks" value="Coke" data-price="0">
+                <label for="coke">Coke</label> 
+
+                <input type="radio" id="coke-zero" name="drinks" value="Coke-Zero" data-price="0">
+                <label for="coke-zero">Coke Zero</label> 
+
+                <input type="radio" id="sprite" name="drinks" value="Sprite" data-price="0">
+                <label for="sprite">Sprite</label> <br><br>
+
+                <input type="radio" id="fanta" name="drinks" value="Fanta" data-price="0">
+                <label for="fanta">Fanta</label> 
+
+                <input type="radio" id="pineapple" name="drinks" value="Pineapple" data-price="35">
+                <label for="pineapple">Pineapple</label> 
+
+                <input type="radio" id="san-mig" name="drinks" value="San-Miguel-Beer" data-price="35">
+                <label for="san-mig">San Miguel Beer</label> 
+
+                <br><br>
+
+                <!--Extras-->
+                <h3>Extras</h3>
+                <input type="checkbox" id="ranch-dip" name="extras" value="Ranch-Dip" data-price="50">
+                <label for="ranch-dip">Ranch Dip</label> 
+
+                <input type="checkbox" id="cheese-dip" name="extras" value="Cheese-Dip" data-price="50">
+                <label for="cheese-dip">Cheese Dip</label> 
+
+                <input type="checkbox" id="fries" name="extras" value="Fries" data-price="70">
+                <label for="fries">Fries</label> <br><br>
+
+                <input type="checkbox" id="over-fries" name="extras" value="Overload-Fries" data-price="100">
+                <label for="over-fries">Overload Fries</label> 
+
+                <input type="checkbox" id="nuggets" name="extras" value="nuggets" data-price="80">
+                <label for="nuggets">Nuggets</label> 
+
+                <input type="checkbox" id="onion-rings" name="extras" value="Onion-Rings" data-price="100">
+                <label for="onion-rings">Onion Rings</label> 
+            </form>
+        </div>
+    </div>
+
+    <br><br>
+
+    <p id="orderCount">Orders: 0</p>
+    
+    <div class="btn">
+        <button type="button" id="addCartButton" onclick="addToCart()" disabled>
+            Add to Cart
+        </button>
+        
+        <button type="button" onclick="goToCheckout()">
+            Checkout <span id="cartSummary"></span>
+        </button>
+        
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    background-color: #FCF48C;
+    background-size: cover; 
+    height: 60px; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed; 
+    top: 0; 
+}
+
+.header h1 {
+    font-weight: 800;
+    font-size: 22px;
+    color: #401516;
+    margin-left: 105px; /* Adjust as needed */
+}
+
+
+.wingin-logo {
+    margin-left: 30; 
+    width: 77px;
+    height: 77px;
+}
+
+.wingin-poster {
+    max-width: 600px; /* Set a maximum width for the image */
+    height: auto;
+    display: flex;
+    margin-top: 100px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    justify-content: center; 
+    border-radius: 20px;
+}
+
+.order-button {
+    justify-content: center; 
+}
