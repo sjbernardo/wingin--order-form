@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title and icon -->
+    <title>Wingin' | Order Form</title>
+    <link rel="icon" href="pic/mascot/wingin.png">
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Link to JavaScript -->
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <div class="header"> 
+        <img src="pic/mascot/wingin.png" alt="Wingin' Logo" class="wingin-logo">
+        <h1>Wingin'</h1>
+    </div>
+    
+    <div class="customer-info">
+        <h1>Order Form</h1>
+        <div class="customer-details">
+            <!-- Customer Details -->
+            <form method="GET">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <br><br>
+    
+                <label for="street">Street Address:</label>
+                <input type="text" id="street" name="street" placeholder="Enter your street address" required>
+                <br><br>
+    
+                <label for="city">City/Province:</label>
+                <input type="text" id="city" name="city" placeholder="Enter your city and province" required>
+                <br><br>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="@gmail.com" required>
+                <br><br>
+    
+                <label for="phone-num">Phone No.:</label>
+                <input type="tel" id="phone-num" name="phone-num" placeholder="09xx-xxx-xxxx" required>
+                <br><br>
+            
+                <div class="container">
+                    <div class="next-btn">
+                        <button type="submit" onclick="saveCustomerDetails(event)">
+                            SUBMIT
+                        </button>
+                    </div>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+</body>
+</html>

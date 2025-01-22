@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Page title and icon -->
+        <title>Wingin' | Menu</title>
+        <link rel="icon" href="pic/mascot/wingin.png">
+
+        <!-- Link to CSS -->
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Link to JavaScript -->
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+
+        <!-- Header section -->
+        <div class="header">
+            <!-- Wingin' logo -->
+            <img src="pic/mascot/wingin.png" alt="Wingin' Logo" class="wingin-logo">
+            <!-- Page heading -->
+            <h1>Wingin'</h1>
+        
+            <!-- Cart container displaying the number of items -->
+            <div class="cart-container">
+                <p id="orderCount" class="order-count">0</p>
+                <img src="pic/mascot/cart.png" alt="Cart" class="cart">
+            </div>
+        </div>
+        
+
+        <!-- Menu section -->
+        <div class="menu">
+            <!-- Wings section -->
+            <div class="wings">
+                <form id="orderForm"> 
+                    <!--Main Dish: Wings Flavor-->
+                    <h3 class="wings-header">Wings</h3>
+
+                    <!--1. Classic-->
+                    <div class="wing-grid">
+                        <div class="wing-item">
+                            <div class="wing-content">
+                                <div class="wing-details">
+                                    <input type="radio" id="classic" name="wings" value="Classic" data-price="100" required>
+                                    <div>
+                                        <span class="wing-name">Classic</span>
+                                        <span>2pcs w/ rice & drink</span>
+                                        <span class="price">₱100</span>
+                                    </div>
+                                </div>
+                                <img src="pic/wings/Classic.png" alt="Classic Wings">
+                            </div>
+                        </div>
+
+                        <div class="wing-item">
+                            <div class="wing-content">
+                                <div class="wing-details">
+                                    <input type="radio" id="buffalo" name="wings" value="Buffalo" data-price="120" required>
+                                    <div>
+                                        <span class="wing-name">Buffalo</span>
+                                        <span>2pcs w/ rice & drink</span>
+                                        <span class="price">₱120</span>
+                                    </div>
+                                </div>
+                                <img src="pic/wings/Buffalo.png" alt="Buffalo Wings">
+                            </div>
+                        </div>
+
+                        <div class="wing-item">
+                            <div class="wing-content">
+                                <div class="wing-details">
+                                    <input type="radio" id="cheese" name="wings" value="Cheese" data-price="120" required>
+                                    <div>
+                                        <span class="wing-name">Cheese</span>
+                                        <span>2pcs w/ rice & drink</span>
+                                        <span class="price">₱120</span>
+                                    </div>
+                                </div>
+                                <img src="pic/wings/Cheese.png" alt="Cheese Wings">
+                            </div>
+                        </div>
+
+                        <div class="wing-item">
+                            <div class="wing-content">
+                                <div class="wing-details">
+                                    <input type="radio" id="soy-garlic" name="wings" value="Soy Garlic" data-price="130" required>
+                                    <div>
+                                        <span class="wing-name">Soy Garlic</span>
+                                        <span>2pcs w/ rice & drink</span>
+                                        <span class="price">₱130</span>
+                                    </div>
+                                </div>
+                                <img src="pic/wings/Soy Garlic.png" alt="Soy Garlic Wings">
+                            </div>
+                        </div>
+
+                        <div class="wing-item">
+                            <div class="wing-content">
+                                <div class="wing-details">
+                                    <input type="radio" id="snow-cheese" name="wings" value="Snow Cheese" data-price="130" required>
+                                    <div>
+                                        <span class="wing-name">Snow Cheese</span>
+                                        <span>2pcs w/ rice & drink</span>
+                                        <span class="price">₱130</span>
+                                    </div>
+                                </div>
+                                <img src="pic/wings/Snow Cheese.png" alt="Snow Cheese Wings">
+                            </div>
+                        </div>
+
+                        <div class="wing-item">
+                            <div class="wing-content">
+                                <div class="wing-details">
+                                    <input type="radio" id="salted-egg" name="wings" value="Salted Egg" data-price="140" required>
+                                    <div>
+                                        <span class="wing-name">Salted Egg</span>
+                                        <span>2pcs w/ rice & drink</span>
+                                        <span class="price">₱120</span>
+                                    </div>
+                                </div>
+                                <img src="pic/wings/Salted Egg.png" alt="Salted Egg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <br><br>
+
+                    <!-- Drinks -->
+                    <h3 class="drinks-header">Drinks</h3>
+                    <div class="drink-grid">
+                        <div class="drink-item">
+                            <input type="radio" id="coke" name="drinks" value="Coke" data-price="0" required>
+                            <div class="drink-details">
+                                <label for="coke">Coke</label>
+                                <span class="price">FREE</span>
+                            </div>
+                            <img src="pic/drinks/coke.png" alt="Coke">
+                        </div>
+
+                        <div class="drink-item">
+                            <input type="radio" id="coke-zero" name="drinks" value="Coke Zero" data-price="0" required>
+                            <div class="drink-details">
+                                <label for="coke-zero">Coke Zero</label>
+                                <span class="price">FREE</span>
+                            </div>
+                            <img src="pic/drinks/Coke Zero.png" alt="Coke Zero">
+                        </div>
+
+                        <div class="drink-item">
+                            <input type="radio" id="sprite" name="drinks" value="Sprite" data-price="0" required>
+                            <div class="drink-details">
+                                <label for="sprite">Sprite</label>
+                                <span class="price">FREE</span>
+                            </div>
+                            <img src="pic/drinks/sprite.png" alt="Sprite">
+                        </div>
+
+                        <div class="drink-item">
+                            <input type="radio" id="fanta" name="drinks" value="Fanta" data-price="0" required>
+                            <div class="drink-details">
+                                <label for="fanta">Fanta</label>
+                                <span class="price">FREE</span>
+                            </div>
+                            <img src="pic/drinks/Fanta.png" alt="Fanta">
+                        </div>
+
+                        <div class="drink-item">
+                            <input type="radio" id="pineapple" name="drinks" value="Pineapple" data-price="35" required>
+                            <div class="drink-details">
+                                <label for="pineapple">Pineapple</label>
+                                <span class="price">₱35</span>
+                            </div>
+                            <img src="pic/drinks/pineapple.png" alt="Pineapple">
+                        </div>
+
+                        <div class="drink-item">
+                            <input type="radio" id="san-mig" name="drinks" value="San Miguel Beer" data-price="35" required>
+                            <div class="drink-details">
+                                <label for="san-mig">San Miguel Beer</label>
+                                <span class="price">₱35</span>
+                            </div>
+                            <img src="pic/drinks/Beer.png" alt="San Miguel Beer">
+                        </div>
+                    </div>
+
+                    <br><br>
+
+                    <!-- Extras -->
+                    <h3 class="extras-header">Extras</h3>
+                    <div class="extras-grid">
+                        <div class="extras-item">
+                            <input type="checkbox" id="ranch-dip" name="extras" value="Ranch Dip" data-price="50">
+                            <div class="extras-details">
+                                <label for="ranch-dip">Ranch Dip</label>
+                                <span class="price">₱50</span>
+                            </div>
+                            <img src="pic/extras/Ranch Dip.png" alt="Ranch Dip">
+                        </div>
+
+                        <div class="extras-item">
+                            <input type="checkbox" id="cheese-dip" name="extras" value="Cheese Dip" data-price="50">
+                            <div class="extras-details">
+                                <label for="cheese-dip">Cheese Dip</label>
+                                <span class="price">₱50</span>
+                            </div>
+                            <img src="pic/extras/Cheese Dip.png" alt="Cheese Dip">
+                        </div>
+
+                        <div class="extras-item">
+                            <input type="checkbox" id="rice" name="extras" value="Rice" data-price="20">
+                            <div class="extras-details">
+                                <label for="rice">Rice</label>
+                                <span class="price">₱20</span>
+                            </div>
+                            <img src="pic/extras/Rice.png" alt="Rice">
+                        </div>
+
+                        <div class="extras-item">
+                            <input type="checkbox" id="fries" name="extras" value="Fries" data-price="100">
+                            <div class="extras-details">
+                                <label for="fries">Fries</label>
+                                <span class="price">₱100</span>
+                            </div>
+                            <img src="pic/extras/Fries.png" alt="Fries">
+                        </div>
+
+                        <div class="extras-item">
+                            <input type="checkbox" id="nuggets" name="extras" value="Nuggets" data-price="80">
+                            <div class="extras-details">
+                                <label for="nuggets">Nuggets</label>
+                                <span class="price">₱80</span>
+                            </div>
+                            <img src="pic/extras/Nuggets.png" alt="Nuggets">
+                        </div>
+
+                        <div class="extras-item">
+                            <input type="checkbox" id="onion-rings" name="extras" value="Onion Rings" data-price="70">
+                            <div class="extras-details">
+                                <label for="onion-rings">Onion Rings</label>
+                                <span class="price">₱70</span>
+                            </div>
+                            <img src="pic/extras/Onion Rings.png" alt="Onion Rings">
+                        </div>
+                    </div>
+                    <div class="order-container">
+                        <div class="order-form-btn">
+                            <button type="button" id="addCartButton" onclick="addToCart()" disabled>
+                                Add to Cart
+                            </button>
+                            
+                            <button type="button" onclick="goToCheckout()">
+                                Checkout <span id="cartSummary"></span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

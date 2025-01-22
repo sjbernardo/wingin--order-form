@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Page title and icon -->
+        <title>Order Summary</title>
+        <link rel="icon" href="pic/mascot/wingin.png">
+
+        <!-- Link to CSS -->
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Link to JavaScript -->
+        <script src="script.js" defer></script>
+    </head>
+
+
+    <body>
+        <div class="header"> 
+            <img src="pic/mascot/wingin.png" alt="Wingin' Logo" class="wingin-logo">
+            <h1>Wingin'</h1>
+        </div>
+        
+        <div class="order-summary-container">
+            <h1>Order Summary</h1>
+            <!-- Customer Details Section -->
+            <div class="customer-summary">
+                <h2>Customer Details</h2>
+                <p><strong>Name:</strong> <span id="customerName"></span></p>
+                <p><strong>Street Address:</strong> <span id="customerStreet"></span></p>
+                <p><strong>City:</strong> <span id="customerCity"></span></p>
+                <p><strong>Email:</strong> <span id="customerEmail"></span></p>
+                <p><strong>Phone Number:</strong> <span id="customerPhone"></span></p>
+            </div>
+
+            <!-- Order List Section -->
+            <div class="order-list">
+                <h2>Order Details</h2>
+                <div id="orderSummary"></div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="summary-btn">
+                <button onclick="addOrder()">Add Order</button>
+                <button onclick="window.location.href='/order-confirmed.html'">Checkout</button>
+            </div>
+        </div>
+    </body>
+</html>
